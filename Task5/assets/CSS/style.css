@@ -1,0 +1,177 @@
+/* Start Global */
+:root {
+  --font: "Open Sans", sans-serif;
+  --main-color: rgb(58, 182, 76);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0 50px;
+}
+
+/* small */
+@media (min-width : 768px){
+  .container{
+      width:750px;
+  }
+}
+/* mediam */
+@media (min-width : 992px){
+  .container{
+      width : 970px;
+  }
+}
+/* mediam */
+@media (min-width:1200px){
+  .container{
+      width:1170px;
+  }
+}
+/* End Global */
+
+.academy {
+  background: url(../image/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
+}
+.academy::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000090;
+  z-index: -1;
+}
+.academy .container .section-heading {
+  margin: 30px;
+  text-align: center;
+}
+.academy .container .section-heading h1 {
+  font-size: 2em;
+  font-family: var(--font);
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.academy .container .section-heading span {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--main-color);
+  margin: 20px auto 60px;
+}
+
+.academy .container .Cards {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+}
+.academy .container .Cards span.icon {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  line-height: 50px;
+  text-align: center;
+  font-size: 32px;
+  border-radius: 50px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  transition: 0.5s;
+}
+.academy .container .Cards span.left {
+  left: 0;
+}
+.academy .container .Cards span.right {
+  right: 0;
+}
+.academy .container .Cards span.icon:hover {
+  background-color: var(--main-color);
+  color: #000;
+  cursor: pointer;
+}
+.academy .container .Cards .Feature {
+  background-color: #fff;
+}
+
+.academy .container .Cards .Feature .top img {
+  max-width: 100%;
+}
+.academy .container .Cards .Feature .top {
+  position: relative;
+}
+.academy .container .Cards .Feature .top .image-label {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+  width: 100px;
+  height: fit-content;
+  padding: 6px 10px 4px 15px;
+  background-color: var(--main-color);
+  z-index: 2;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 16px;
+}
+
+.academy .container .Cards .Feature .bottom {
+  margin: 20px;
+  border-bottom: 1px solid var(--main-color);
+}
+.academy .container .Cards .Feature .bottom h2 {
+  margin-bottom: 20px;
+  font-family: var(--font);
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.academy .container .Cards .Feature .bottom .text {
+  font-family: var(--font);
+  font-weight: 100;
+  font-size: 14px;
+  color:#00000090;
+  margin-bottom: 20px;
+  height: 50px;
+  white-space: wrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.academy .container .Cards .Feature .price {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  color: black;
+  font-family: var(--font);
+  font-size: 14px;
+}
+
+.academy .container .Cards .Feature .price span {
+  color: fff;
+}
+
+@media (max-width: 991px) {
+  .academy .container .Cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 50px;
+  }
+  .academy .container .Cards span.icon {
+    display: none;
+  }
+}

@@ -1,0 +1,168 @@
+/* Start Global Settings */
+
+:root {
+  --font: "Open Sans", sans-serif;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+/* small */
+@media (min-width : 768px){
+  .container{
+      width:750px;
+  }
+}
+/* mediam */
+@media (min-width : 992px){
+  .container{
+      width : 970px;
+  }
+}
+/* mediam */
+@media (min-width:1200px){
+  .container{
+      width:1170px;
+  }
+}
+
+/*End Global Settings */
+
+/* Start Services */
+.Services {
+  background-color: #ddd;
+}
+
+/* Start Cards */
+.Services .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  position: relative;
+}
+
+.Services .container .cards .item {
+  position: relative;
+  background-color: #fff ;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.Services .container .cards .item .course-image img {
+  max-width: 100%;
+} 
+/* End Cards */
+
+/* Start # */
+.Services .container .item .item-data {
+  padding: 20px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+} 
+.Services .container .item .item-data .reviews {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.Services .container .item .item-data .reviews i{
+  color: gold;
+} 
+.Services .container .item .item-data .item-title{
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+} 
+.Services .container .item .item-data .details{
+  display: flex;
+  background-color: #eee;
+  width: fit-content;
+  margin-bottom: 20px;
+} 
+.Services .container .item .item-data .item-detail{
+  padding: 10px; 
+  color: #999;
+  font-family: var(--font);
+  font-size: 14px;
+} 
+.Services .container .item .item-data .item-detail i{
+  color: #999;
+} 
+.Services .container .item .item-data .item-detail:nth-child(1){
+  border-right: 1px solid #ddd;
+} 
+.Services .container .item .item-data .item-desc{
+  color: #777;
+  font-family: var(--font);
+  margin-bottom: 20px;
+  height: 40px;
+  overflow: hidden;
+} 
+.Services .container .item .item-data .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Services .container .item .item-data .profile img{
+  max-width: 45px;
+  border-radius: 50%;
+  
+} 
+
+.Services .container .item .item-data .profile .profile-title{
+  font-size: 16px;
+  font-family: var(--font);
+  font-weight: bold; 
+} 
+.Services .container .item .item-data .profile .profile-title span{
+  color: #777;
+} 
+.Services .container .item .item-data .icon-bookmark{
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  background-color: #ddd;
+  color: #666;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  border:1px solid #bbb;
+} 
+.Services .container .item .subscription{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: bold;
+}
+.Services .container .item .subscription .price .salery{
+  text-decoration: line-through;
+}
+.Services .container .item .subscription .price .highlight{
+  color: #f00;
+  margin-left: 5px;
+}
+.Services .container .item .subscription .btn a{
+  text-decoration: none;
+  color: #666;  
+}
+.Services .container .item .subscription .btn i{
+  color: #666; 
+  font-size: 12px; 
+}
+/* End # */
+
+/* End Services */

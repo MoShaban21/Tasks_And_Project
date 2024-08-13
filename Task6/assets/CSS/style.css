@@ -1,0 +1,163 @@
+/* Start Global Settings */
+:root {
+  --font: "Open Sans", sans-serif;
+  --main-color: rgb(64 71 97);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* small */
+@media (min-width : 768px){
+  .container{
+      width:750px;
+  }
+}
+/* mediam */
+@media (min-width : 992px){
+  .container{
+      width : 970px;
+  }
+}
+/* mediam */
+@media (min-width:1200px){
+  .container{
+      width:1170px;
+  }
+}
+/*End Global Settings */
+
+/*  Start Header */
+.test .container .header {
+  margin: 30px;
+  text-align: center;
+}
+.test .container .header h2 {
+  font-size: 2em;
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+
+.test .container .header span {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 16px;
+  color: #666;
+}
+/*  End Header  */
+
+/* Start Portfolio */
+.test .container .test-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.test .container .test-items .Portfolio {
+  text-align: center;
+  position: relative;
+  background-color: var(--main-color);
+  padding: 70px 70px 50px 70px;
+}
+
+.test .container .test-items .Portfolio .profile {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+.test .container .test-items .Portfolio .profile img {
+  border-radius: 50%;
+  max-width: 100%;
+  border: 1px solid var(--main-color);
+}
+.test .container .test-items .Portfolio .star-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.test .container .test-items .Portfolio .star-icons i {
+  font-size: 16px;
+  color: gold;
+}
+.test .container .test-items .Portfolio .text {
+  font-size: 16px;
+  color: #ddd;
+  font-style: italic;
+  height: 100px;
+  overflow: hidden;
+  font-family: var(--font);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.test .container .test-items .Portfolio h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: var(--font);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.test .container .test-items .Portfolio span {
+  display: block;
+  font-size: 16px;
+  color: #ddd;
+  font-family: var(--font);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.test .container .test-items .Portfolio .quote-icon {
+  position: absolute;
+  background-color: #eee;
+  right: 100px;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transform: translateY(50%);
+  box-shadow: 0 0 3px #666;
+}
+.test .container .test-items .Portfolio .quote-icon i {
+  color: #f00;
+  line-height: 60px;
+  font-size: 32px;
+}
+/* End Portfolio */
+
+/* Start Circle */
+.Circle {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  text-align: center;
+  display: flex;
+}
+.Circle span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f00;
+  border-radius: 50%;
+  margin: auto;
+}
+.Circle span.active {
+  background-color: #f00;
+}
+/* End Circle */
